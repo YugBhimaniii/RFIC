@@ -11,8 +11,8 @@ export function middleware(req: NextRequest) {
       // atob is available in Edge Runtime
       const [user, pwd] = atob(authValue).split(':');
 
-      const expectedUser = process.env.ADMIN_USERNAME || 'admin';
-      const expectedPwd = process.env.ADMIN_PASSWORD || 'rfic_secure_admin';
+      const expectedUser = process.env.ADMIN_USERNAME || 'yug';
+      const expectedPwd = process.env.ADMIN_PASSWORD || '12345678';
 
       if (user === expectedUser && pwd === expectedPwd) {
         return NextResponse.next();
