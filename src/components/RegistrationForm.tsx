@@ -206,7 +206,7 @@ export function RegistrationForm() {
                       <FormItem>
                         <FormLabel className="text-gray-300">IEEE Membership ID</FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter your ID" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                          <Input type="text" inputMode="numeric" pattern="[0-9]*" placeholder="Enter your ID (numbers only)" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
                         </FormControl>
                         <FormMessage className="text-red-400" />
                       </FormItem>

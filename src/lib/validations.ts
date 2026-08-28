@@ -13,7 +13,7 @@ export const registrationSchema = z.object({
   ], { required_error: "Please select a participant category." }),
   institutionOrCompany: z.string().min(2, "Institution or Company is required."),
   ieeeMember: z.boolean(),
-  ieeeMembershipId: z.string().optional(),
+  ieeeMembershipId: z.string().regex(/^\d*$/, "IEEE Membership ID must contain only numbers").optional(),
   githubHandle: z.string().optional(),
   experienceLevel: z.enum([
     "BEGINNER",
