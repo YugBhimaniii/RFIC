@@ -24,7 +24,7 @@ export const modules: Module[] = [
     fossTooling: [],
     date: "Sept 5, 2026",
     time: "10:00 AM - 1:00 PM IST",
-    speakerIds: ["sumanto_kar", "vipul_sharma"]
+    speakerIds: []
   },
   {
     moduleNumber: 2,
@@ -53,7 +53,7 @@ export const modules: Module[] = [
     fossTooling: ["Xschem", "Ngspice", "Python (scikit-rf, matplotlib)"],
     date: "Sept 12, 2026",
     time: "10:00 AM - 1:00 PM IST",
-    speakerIds: ["sumanto_kar", "vipul_sharma"]
+    speakerIds: []
   },
   {
     moduleNumber: 4,
@@ -68,7 +68,7 @@ export const modules: Module[] = [
     fossTooling: ["Xschem", "Ngspice"],
     date: "Sept 13, 2026",
     time: "10:00 AM - 1:00 PM IST",
-    speakerIds: ["sumanto_kar"]
+    speakerIds: []
   },
   {
     moduleNumber: 5,
@@ -84,7 +84,7 @@ export const modules: Module[] = [
     fossTooling: ["Ngspice (Multi-tone analysis)"],
     date: "Sept 19, 2026",
     time: "10:00 AM - 1:00 PM IST",
-    speakerIds: ["vipul_sharma"]
+    speakerIds: []
   },
   {
     moduleNumber: 6,
@@ -100,7 +100,7 @@ export const modules: Module[] = [
     fossTooling: ["KLayout"],
     date: "Sept 20, 2026",
     time: "10:00 AM - 1:00 PM IST",
-    speakerIds: ["sumanto_kar"]
+    speakerIds: []
   },
   {
     moduleNumber: 7,

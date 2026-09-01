@@ -17,14 +17,7 @@ export const speakers: Speaker[] = [
     avatarUrl: "/avatars/sumanto.png",
     bio: "Expert in open-source EDA tools and RF IC Design. Lead mentor for the flagship series.",
   },
-  {
-    id: "vipul_sharma",
-    name: "Vipul Sharma",
-    roleTitle: "Series Lead Mentor & Module Instructor",
-    organization: "CEO & Founder, NAVIA-LABS",
-    avatarUrl: "/avatars/vipul.png",
-    bio: "Industry expert focusing on next-generation wireless systems and high-frequency design.",
-  },
+
   {
     id: "abdur_rahman",
     name: "Abdur Rahman",
