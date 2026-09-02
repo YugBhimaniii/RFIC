@@ -51,7 +51,7 @@ export function ScrollExpandSection() {
         scrollDistance={1.2}
         holdDistance={0.2}
         smoothing={0.1}
-        overlayScrim={0.5}
+        overlayScrim={0.75}
       >
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
