@@ -10,7 +10,12 @@ export function ScheduleSection() {
               <h4 className="text-xl font-bold text-gray-200">Weekend 1-4</h4>
               <p className="text-gray-400 text-sm">10:00 AM - 1:00 PM IST</p>
             </div>
-            <a href="#" className="text-emerald-400 border border-emerald-400/50 hover:bg-emerald-400/10 px-4 py-2 rounded-md transition-colors text-sm font-medium">
+            <a 
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=IEEE+RF+IC+Design+Micro-Specialization&details=4+Weekends+%E2%80%A2+Saturdays+%26+Sundays+%E2%80%A2+10%3A00+AM+-+1%3A00+PM+IST&dates=20260905T043000Z/20260905T073000Z&recur=RRULE:FREQ=WEEKLY;BYDAY=SA,SU;COUNT=8" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-emerald-400 border border-emerald-400/50 hover:bg-emerald-400/10 px-6 py-3 rounded-full transition-colors text-sm font-medium whitespace-nowrap"
+            >
               Add to Google Calendar
             </a>
           </div>
