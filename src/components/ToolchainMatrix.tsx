@@ -32,7 +32,7 @@ export function ToolchainMatrix() {
                 <div className="text-gray-400 text-sm mb-2 md:mb-0"><span className="md:hidden font-semibold text-gray-300 block mb-1">Proprietary:</span>{tool.prop}</div>
                 <div className="mb-2 md:mb-0">
                   <span className="md:hidden font-semibold text-emerald-400 block mb-1">FOSS Alternative:</span>
-                  <div className="text-emerald-400 font-mono text-sm bg-emerald-500/10 px-3 py-1.5 rounded-md inline-block w-fit">{tool.foss}</div>
+                  <div className="text-emerald-400 font-mono text-sm bg-emerald-500/10 px-5 py-2.5 rounded-full inline-block w-fit">{tool.foss}</div>
                 </div>
                 <div className="text-gray-300 text-sm"><span className="md:hidden font-semibold text-gray-300 block mb-1">Role:</span>{tool.role}</div>
               </div>

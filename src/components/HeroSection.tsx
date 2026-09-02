@@ -38,16 +38,16 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-4 py-2 text-sm font-medium border border-[#1F2937] cursor-default">
+          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-6 py-2.5 text-sm font-medium border border-[#1F2937] cursor-default">
             4 Weeks • 8 Modules
           </Badge>
-          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-4 py-2 text-sm font-medium border border-[#1F2937] cursor-default">
+          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-6 py-2.5 text-sm font-medium border border-[#1F2937] cursor-default">
             Zero-Cost FOSS Toolchain
           </Badge>
-          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-4 py-2 text-sm font-medium border border-[#1F2937] cursor-default">
+          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-6 py-2.5 text-sm font-medium border border-[#1F2937] cursor-default">
             IHP SG13G2 PDK
           </Badge>
-          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-4 py-2 text-sm font-medium border border-[#1F2937] cursor-default">
+          <Badge variant="secondary" className="bg-[#111827] text-gray-300 px-6 py-2.5 text-sm font-medium border border-[#1F2937] cursor-default">
             IEEE Certification
           </Badge>
         </div>
