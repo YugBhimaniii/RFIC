@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
+import { ScrollExpandSection } from "@/components/ScrollExpandSection";
 import { ToolchainMatrix } from "@/components/ToolchainMatrix";
 import { CurriculumSection } from "@/components/CurriculumSection";
 import { SpeakersSection } from "@/components/SpeakersSection";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#0B0F19] flex flex-col">
       <Header />
       <HeroSection />
+      <ScrollExpandSection />
       <ToolchainMatrix />
       <CurriculumSection />
       <SpeakersSection />
