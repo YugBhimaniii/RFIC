@@ -30,7 +30,7 @@ const ScrollExpand = ({
   enabled = true,
   children,
   className = '',
-  style,
+  style = {},
   ...rest
 }) => {
   const rootRef = useRef(null);
