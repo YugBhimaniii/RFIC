@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import SplashCursor from "@/components/SplashCursor";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -23,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body className={`${inter.variable} ${jetbrains.variable} font-sans bg-[#0B0F19] text-gray-200 antialiased select-none`}>
-        <SplashCursor />
         {children}
       </body>
     </html>
