@@ -19,8 +19,8 @@ export function ToolchainMatrix() {
         </div>
 
         <Card className="bg-[#111827] border-[#1F2937] overflow-hidden">
-          <CardHeader className="border-b border-[#1F2937] bg-[#111827]/80">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-semibold text-gray-300">
+          <CardHeader className="border-b border-[#1F2937] bg-[#111827]/80 px-6 md:px-8 py-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold text-gray-300">
               <div className="hidden md:block">Proprietary Standard</div>
               <div className="hidden md:block text-emerald-400">FOSS Alternative</div>
               <div className="hidden md:block">Technical Role</div>
@@ -28,13 +28,13 @@ export function ToolchainMatrix() {
           </CardHeader>
           <CardContent className="p-0">
             {tools.map((tool, i) => (
-              <div key={i} className={`grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-6 border-b border-[#1F2937]/50 items-center hover:bg-[#1F2937]/30 transition-colors ${i === tools.length - 1 ? 'border-0' : ''}`}>
+              <div key={i} className={`grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-6 md:px-8 md:py-6 border-b border-[#1F2937]/50 items-center hover:bg-[#1F2937]/30 transition-colors ${i === tools.length - 1 ? 'border-0' : ''}`}>
                 <div className="text-gray-400 text-sm mb-2 md:mb-0"><span className="md:hidden font-semibold text-gray-300 block mb-1">Proprietary:</span>{tool.prop}</div>
                 <div className="mb-2 md:mb-0">
                   <span className="md:hidden font-semibold text-emerald-400 block mb-1">FOSS Alternative:</span>
-                  <div className="text-emerald-400 font-mono text-sm bg-emerald-500/10 px-5 py-2.5 rounded-full inline-block w-fit">{tool.foss}</div>
+                  <div className="text-emerald-400 font-mono text-sm bg-emerald-500/10 px-6 py-3 rounded-full inline-block w-fit">{tool.foss}</div>
                 </div>
-                <div className="text-gray-300 text-sm"><span className="md:hidden font-semibold text-gray-300 block mb-1">Role:</span>{tool.role}</div>
+                <div className="text-gray-300 text-sm md:pr-4"><span className="md:hidden font-semibold text-gray-300 block mb-1">Role:</span>{tool.role}</div>
               </div>
             ))}
           </CardContent>
