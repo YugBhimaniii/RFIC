@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import ScrollExpand from './ScrollExpand';
+import { Iridescence } from './react-bits/Iridescence';
 
 export function ScrollExpandSection() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,13 +20,12 @@ export function ScrollExpandSection() {
   }, []);
 
   if (!isClient) {
-    // Return a placeholder of similar height to prevent hydration mismatch
-    // The actual component uses 100vh height base container normally, but we wrap it below in a 70vh/90vh container.
-    return <div className="w-full min-h-[70vh] bg-[#0B0F19]" />;
+    return <div className="w-full min-h-[70vh] bg-slate-50" />;
   }
 
   return (
-    <section className="relative w-full bg-[#0B0F19] z-10" id="visual-showcase">
+    <section className="relative w-full bg-slate-50 z-10 overflow-hidden" id="visual-showcase">
+      <Iridescence className="opacity-60" speed={0.5} />
       {/* 
         Container for the scroll expand effect. 
         We use window scroll (useWindowScroll={true}), so the container's height 
@@ -54,10 +54,10 @@ export function ScrollExpandSection() {
         overlayScrim={0.75}
       >
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 drop-shadow-sm">
             Master the Physical Layer
           </h2>
-          <p className="text-lg md:text-xl text-gray-300">
+          <p className="text-lg md:text-xl text-slate-700 drop-shadow-sm font-medium">
             Dive deep into 130nm SiGe BiCMOS technology. From schematic to layout to tape-out, experience true end-to-end open-source silicon design.
           </p>
         </div>

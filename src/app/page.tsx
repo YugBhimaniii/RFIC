@@ -11,7 +11,7 @@ import { RegistrationForm } from "@/components/RegistrationForm";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B0F19] flex flex-col">
+    <main className="min-h-screen bg-slate-50 flex flex-col">
       <Header />
       <HeroSection />
       <ScrollExpandSection />

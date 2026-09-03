@@ -58,7 +58,7 @@ export function RegistrationForm() {
         title: "Registration Successful!",
         description: "Your spot has been reserved! We will contact you closer to the event date.",
         variant: "default",
-        className: "bg-emerald-500 text-white border-none",
+        className: "bg-sky-600 text-white border-none",
       });
       
       form.reset();
@@ -74,14 +74,14 @@ export function RegistrationForm() {
   }
 
   return (
-    <section className="py-20 bg-[#111827] border-t border-[#1F2937]" id="register">
+    <section className="py-20 bg-slate-50 border-t border-slate-200" id="register">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">Secure Your Spot</h2>
-          <p className="text-gray-400">Register for the IEEE RF IC Design Micro-Specialization series.</p>
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Secure Your Spot</h2>
+          <p className="text-slate-600">Register for the IEEE RF IC Design Micro-Specialization series.</p>
         </div>
 
-        <div className="bg-[#0B0F19] p-6 md:p-10 rounded-xl border border-[#1F2937] shadow-xl">
+        <div className="bg-white p-6 md:p-10 rounded-xl border border-slate-200 shadow-md">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               
@@ -91,11 +91,11 @@ export function RegistrationForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">Full Name</FormLabel>
+                      <FormLabel className="text-slate-900">Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                        <Input placeholder="John Doe" className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                       </FormControl>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
@@ -104,11 +104,11 @@ export function RegistrationForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">Email Address</FormLabel>
+                      <FormLabel className="text-slate-900">Email Address</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="john@example.com" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                        <Input type="email" placeholder="john@example.com" className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                       </FormControl>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
@@ -120,11 +120,11 @@ export function RegistrationForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">Phone (Optional)</FormLabel>
+                      <FormLabel className="text-slate-900">Phone (Optional)</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+1..." className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                        <Input type="tel" placeholder="+1..." className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                       </FormControl>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
@@ -134,14 +134,14 @@ export function RegistrationForm() {
                   name="category"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">Participant Category</FormLabel>
+                      <FormLabel className="text-slate-900">Participant Category</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-[#111827] border-[#1F2937] text-white">
+                          <SelectTrigger className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500">
                             <SelectValue placeholder="Select a category" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent className="bg-[#111827] border-[#1F2937] text-white">
+                        <SelectContent className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500">
                           <SelectItem value="STUDENT_RIT">Student (RIT)</SelectItem>
                           <SelectItem value="STUDENT_EXTERNAL">Student (External)</SelectItem>
                           <SelectItem value="RESEARCH_SCHOLAR">Research Scholar / PhD</SelectItem>
@@ -149,7 +149,7 @@ export function RegistrationForm() {
                           <SelectItem value="ACADEMIA">Academia / Faculty</SelectItem>
                         </SelectContent>
                       </Select>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
@@ -160,26 +160,26 @@ export function RegistrationForm() {
                 name="institutionOrCompany"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-gray-300">Institution or Company Name</FormLabel>
+                    <FormLabel className="text-slate-900">Institution or Company Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="University of XYZ / Intel" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                      <Input placeholder="University of XYZ / Intel" className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                     </FormControl>
-                    <FormMessage className="text-red-400" />
+                    <FormMessage className="text-red-500" />
                   </FormItem>
                 )}
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-[#1F2937] pt-6 mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-slate-200 pt-6 mt-6">
                  <FormField
                   control={form.control}
                   name="ieeeMember"
                   render={({ field }) => (
-                    <FormItem className="flex flex-row items-center justify-between rounded-lg border border-[#1F2937] bg-[#111827] p-4">
+                    <FormItem className="flex flex-row items-center justify-between rounded-lg border border-slate-200 bg-slate-50 p-4">
                       <div className="space-y-0.5">
-                        <FormLabel className="text-base text-gray-200">
+                        <FormLabel className="text-base text-slate-900">
                           IEEE Member
                         </FormLabel>
-                        <FormDescription className="text-gray-500">
+                        <FormDescription className="text-slate-500">
                           Are you a current IEEE member?
                         </FormDescription>
                       </div>
@@ -191,7 +191,7 @@ export function RegistrationForm() {
                             field.onChange(e.target.checked);
                             setIsIeeeMember(e.target.checked);
                           }}
-                          className="w-5 h-5 accent-emerald-500 bg-[#0B0F19] border-[#1F2937] rounded"
+                          className="w-5 h-5 accent-sky-600 bg-white border-slate-300 rounded"
                         />
                       </FormControl>
                     </FormItem>
@@ -204,11 +204,11 @@ export function RegistrationForm() {
                     name="ieeeMembershipId"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-gray-300">IEEE Membership ID</FormLabel>
+                        <FormLabel className="text-slate-900">IEEE Membership ID</FormLabel>
                         <FormControl>
-                          <Input type="text" inputMode="numeric" pattern="[0-9]*" placeholder="Enter your ID (numbers only)" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                          <Input type="text" inputMode="numeric" pattern="[0-9]*" placeholder="Enter your ID (numbers only)" className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                         </FormControl>
-                        <FormMessage className="text-red-400" />
+                        <FormMessage className="text-red-500" />
                       </FormItem>
                     )}
                   />
@@ -221,20 +221,20 @@ export function RegistrationForm() {
                   name="experienceLevel"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">Experience Level</FormLabel>
+                      <FormLabel className="text-slate-900">Experience Level</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-[#111827] border-[#1F2937] text-white">
+                          <SelectTrigger className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500">
                             <SelectValue placeholder="Select level" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent className="bg-[#111827] border-[#1F2937] text-white">
+                        <SelectContent className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500">
                           <SelectItem value="BEGINNER">Beginner (No prior tape-out)</SelectItem>
                           <SelectItem value="INTERMEDIATE_ANALOG">Intermediate (Basic Analog/VLSI)</SelectItem>
                           <SelectItem value="ADVANCED_RF">Advanced (RF IC / Past Tape-outs)</SelectItem>
                         </SelectContent>
                       </Select>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
@@ -244,17 +244,17 @@ export function RegistrationForm() {
                   name="githubHandle"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-gray-300">GitHub Profile URL (For Capstone)</FormLabel>
+                      <FormLabel className="text-slate-900">GitHub Profile URL (For Capstone)</FormLabel>
                       <FormControl>
-                        <Input placeholder="https://github.com/username" className="bg-[#111827] border-[#1F2937] text-white" {...field} />
+                        <Input placeholder="https://github.com/username" className="bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus-visible:ring-sky-500" {...field} />
                       </FormControl>
-                      <FormMessage className="text-red-400" />
+                      <FormMessage className="text-red-500" />
                     </FormItem>
                   )}
                 />
               </div>
 
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold h-12 text-lg shadow-[0_0_15px_rgba(16,185,129,0.3)] mt-8">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold h-12 text-lg shadow-md shadow-sky-600/20 mt-8">
                 {isSubmitting ? "Registering..." : "Submit Registration"}
               </Button>
             </form>
