@@ -21,9 +21,9 @@ export function SplitText({ text, className = '', delay = 0 }: SplitTextProps) {
   }, [controls, isInView]);
 
   return (
-    <div ref={ref} className={`inline-block overflow-hidden pb-2 -mb-2 ${className}`}>
+    <div ref={ref} className={`inline-block overflow-hidden pb-8 -mb-8 ${className}`}>
       {text.split(' ').map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-block whitespace-nowrap overflow-hidden pb-2 -mb-2">
+        <span key={wordIndex} className="inline-block whitespace-nowrap overflow-hidden pb-8 -mb-8">
           {word.split('').map((char, charIndex) => {
             return (
               <motion.span
