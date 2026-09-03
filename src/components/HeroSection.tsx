@@ -60,7 +60,7 @@ export function HeroSection() {
               </div>
             </StarBorder>
           </Link>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto h-auto py-3 px-8 border-slate-300 text-slate-900 hover:bg-slate-100 text-base font-semibold rounded-full">
+          <Button size="lg" variant="outline" className="w-full sm:w-auto h-auto py-3 px-8 bg-white border border-slate-300 text-slate-900 hover:bg-slate-50 text-base font-semibold rounded-full shadow-sm">
             Download Syllabus
           </Button>
         </div>

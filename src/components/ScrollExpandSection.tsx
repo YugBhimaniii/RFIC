@@ -24,7 +24,7 @@ export function ScrollExpandSection() {
   }
 
   return (
-    <section className="relative w-full bg-slate-50 z-10 overflow-hidden" id="visual-showcase">
+    <section className="relative w-full bg-slate-50 z-10 overflow-hidden mb-16 md:mb-24" id="visual-showcase">
       <Iridescence className="opacity-60" speed={0.5} />
       {/* 
         Container for the scroll expand effect. 
@@ -48,8 +48,8 @@ export function ScrollExpandSection() {
         startRadius={24}
         endRadius={0}
         mediaZoom={1.35}
-        scrollDistance={0.5}
-        holdDistance={0.1}
+        scrollDistance={0.4}
+        holdDistance={0}
         smoothing={0.1}
         overlayScrim={0.75}
       >
