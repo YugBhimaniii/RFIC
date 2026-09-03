@@ -48,8 +48,8 @@ export function ScrollExpandSection() {
         startRadius={24}
         endRadius={0}
         mediaZoom={1.35}
-        scrollDistance={1.2}
-        holdDistance={0.2}
+        scrollDistance={0.5}
+        holdDistance={0.1}
         smoothing={0.1}
         overlayScrim={0.75}
       >

@@ -41,17 +41,17 @@ export function Iridescence({
       const gradient = ctx.createLinearGradient(0, 0, width, height);
       
       // Creating a soft liquid chrome / iridescence effect for light mode
-      const r1 = Math.sin(time) * 10 + 240;
-      const g1 = Math.cos(time * 0.8) * 10 + 248;
+      const r1 = Math.sin(time) * 10 + 125;
+      const g1 = Math.cos(time * 0.8) * 10 + 211;
       const b1 = Math.sin(time * 1.2) * 5 + 252;
       
-      const r2 = Math.cos(time * 1.1) * 15 + 224;
-      const g2 = Math.sin(time * 0.9) * 15 + 242;
-      const b2 = Math.cos(time * 1.3) * 5 + 254;
+      const r2 = Math.cos(time * 1.1) * 15 + 56;
+      const g2 = Math.sin(time * 0.9) * 15 + 189;
+      const b2 = Math.cos(time * 1.3) * 5 + 248;
       
-      const r3 = Math.sin(time * 0.7) * 10 + 204;
-      const g3 = Math.cos(time * 1.4) * 10 + 251;
-      const b3 = Math.sin(time * 0.8) * 5 + 241;
+      const r3 = Math.sin(time * 0.7) * 10 + 14;
+      const g3 = Math.cos(time * 1.4) * 10 + 165;
+      const b3 = Math.sin(time * 0.8) * 5 + 233;
 
       gradient.addColorStop(0, `rgb(${r1}, ${g1}, ${b1})`);
       gradient.addColorStop(0.5, `rgb(${r2}, ${g2}, ${b2})`);
