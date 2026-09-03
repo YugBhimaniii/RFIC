@@ -1,6 +1,5 @@
-'use client';
+import { useCallback, useEffect, useRef } from 'react';
 
-import React, { useCallback, useEffect, useRef } from 'react';
 import './ScrollExpand.css';
 
 const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
@@ -25,12 +24,12 @@ const ScrollExpand = ({
   scrollDistance = 1.2,
   holdDistance = 0.35,
   smoothing = 0.1,
-  overlayScrim = 0.6,
+  overlayScrim = 0.45,
   useWindowScroll = false,
   enabled = true,
   children,
   className = '',
-  style = {},
+  style,
   ...rest
 }) => {
   const rootRef = useRef(null);
@@ -118,8 +117,7 @@ const ScrollExpand = ({
       track.style.height = `${stageH * (1 + Math.max(0, c.scrollDistance) + Math.max(0, c.holdDistance))}px`;
 
       const w = root.clientWidth || stageH;
-      // Adjusted font size scaling specifically for RFIC site title
-      stage.style.setProperty('--se-title-size', `${clamp(w * 0.06, 24, 72)}px`);
+      stage.style.setProperty('--se-title-size', `${clamp(w * 0.075, 20, 84)}px`);
     };
 
     const readProgress = () => {
@@ -200,7 +198,6 @@ const ScrollExpand = ({
         playsInline
       />
     ) : (
-      // eslint-disable-next-line @next/next/no-img-element
       <img ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} draggable={false} />
     );
 
